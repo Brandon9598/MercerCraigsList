@@ -36,6 +36,15 @@ namespace Mercer_Craigslist.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Detail(int id)
+        {
+            var item = _dbContext.Items.SingleOrDefault(i => i.Id == id);
+            if (item == null)
+                return HttpNotFound();
+            return View(item);
+           
+        }
+
         public ActionResult Edit(int id)
         {
             var item = _dbContext.Items.SingleOrDefault(i => i.Id == id);

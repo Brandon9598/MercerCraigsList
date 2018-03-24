@@ -1,10 +1,19 @@
-﻿
+﻿@model List<Mercer_Craigslist.Models.Category>
 @{
     ViewBag.Title = "Categories";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Categories</h2>
+@*<ul>
+    <li>@Html.ActionLink("Electronics", "Electronics", new { categoryID = ca })</li>
+</ul>*@
+
 <ul>
-    <li>Electronics</li>
+    @foreach (var category in Model)
+    {
+        <li class="category-box">
+            @Html.ActionLink(category.ToString(), "Category", new { categoryID = category })
+        </li>
+    }
 </ul>

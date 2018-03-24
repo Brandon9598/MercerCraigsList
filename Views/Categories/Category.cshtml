@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Mercer_Craigslist.Models.Item>
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Category</h2>
+<div class="items">
+    <div class="container">
+        <ul>
+            @foreach (var item in Model)
+            {
+            <li class="item-overview col-md-4">
+                <div class="item-title">@item.Title </div>
+                <div class="item-cost">@item.Cost </div>
+                <div class="item-description">@item.Description </div>
+                @Html.ActionLink("More info", "Detail", new { id = item.Id})
+            </li>
+            }    
+        </ul>
+    </div>
+</div>
+
+
+

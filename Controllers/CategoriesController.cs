@@ -17,9 +17,27 @@ namespace Mercer_Craigslist.Controllers
         }
 
         // GET: Categories
-        public ActionResult Catagories()
+        public ActionResult Categories()
         {
-            return View();
+            List<Category> CategoriesList = new List<Category>();
+            var categories = Enum.GetValues(typeof(Category));
+            foreach(Category category in categories)
+            {
+                CategoriesList.Add(category);
+            }
+
+            return View(CategoriesList);
         }
+
+        public ActionResult Category(Category categoryID)
+        {
+            var allItems = _dbContext.Items.ToList();
+            var categoryItems = allItems.Where(c => c.Category == categoryID);
+
+            return View(categoryItems);
+        }
+
+
+
     }
 }

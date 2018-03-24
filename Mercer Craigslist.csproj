@@ -276,6 +276,8 @@
     <Content Include="Views\Items\Edit.cshtml" />
     <Content Include="Views\Items\Delete.cshtml" />
     <Content Include="Views\Categories\Categories.cshtml" />
+    <Content Include="Views\Categories\Category.cshtml" />
+    <Content Include="Views\Items\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
