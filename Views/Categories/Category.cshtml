@@ -11,10 +11,11 @@
             @foreach (var item in Model)
             {
             <li class="item-overview col-md-4">
+                <img src="@Url.Content(item.ImagePath)" width="100" />
                 <div class="item-title">@item.Title </div>
                 <div class="item-cost">@item.Cost </div>
                 <div class="item-description">@item.Description </div>
-                @Html.ActionLink("More info", "Detail", "Items", new { id = item.Id }, new {})
+                @Html.ActionLink("More info", "Detail", "Items", new { id = item.Id }, new { })
             </li>
             }    
         </ul>

@@ -1,0 +1,37 @@
+﻿li{
+    list-style-type: none;
+}
+html{
+    font-family: Arial;
+    font-weight:300;
+}
+
+#bootstrap-overrides .navbar-inverse .navbar-nav li a {
+    color: orange;
+}
+
+h2{
+    color: orange;
+
+}
+
+.category-box {
+    text-align: center;
+     margin: 0 15px;
+}
+
+.category-box a{
+    font-size: 200%;
+}
+
+.boxes{
+    float: left;
+}
+
+.item-name{
+    font-size: 200%;
+}
+
+.item-overview{
+    float: left;
+}
