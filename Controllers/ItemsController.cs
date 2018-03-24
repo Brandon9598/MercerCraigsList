@@ -32,12 +32,12 @@ namespace Mercer_Craigslist.Controllers
 
         public ActionResult Add(Item item)
         {
-            //string fileName = Path.GetFileNameWithoutExtension(item.ImageFile.FileName);
-            //string extension = Path.GetExtension(item.ImageFile.FileName);
-            //fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-            //item.ImagePath = "~/image/" + fileName;
-            //fileName = Path.Combine(Server.MapPath("~/images/"), fileName);
-            //item.ImageFile.SaveAs(fileName);            
+            string fileName = Path.GetFileNameWithoutExtension(item.ImageFile.FileName);
+            string extension = Path.GetExtension(item.ImageFile.FileName);
+            fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+            item.ImagePath = "~/images/" + fileName;
+            fileName = Path.Combine(Server.MapPath("~/images/"), fileName);
+            item.ImageFile.SaveAs(fileName);
             _dbContext.Items.Add(item);
             _dbContext.SaveChanges();
             ModelState.Clear();

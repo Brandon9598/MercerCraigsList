@@ -12,7 +12,9 @@
 <ul>
     @foreach (var item in Model)
     {
-        <li>@item.Title (@item.Category) 
+        <li class="item-blurb">
+            <img src="@Url.Content(item.ImagePath)" width="100"/>
+            @item.Title (@item.Category) 
             @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.Id })
          </li>

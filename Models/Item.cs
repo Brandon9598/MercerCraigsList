@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -13,6 +14,9 @@ namespace Mercer_Craigslist.Models
         public decimal Cost { get; set; }
         public string OwnerEmail { get; set; }
         public Category Category { get; set; }
+        public string ImagePath { get; set; }
+        [NotMapped]
+        public HttpPostedFileBase ImageFile { get; set; }
     }
     public enum Category
     {

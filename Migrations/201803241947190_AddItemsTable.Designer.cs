@@ -13,7 +13,7 @@ namespace Mercer_Craigslist.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201803241940214_AddItemsTable"; }
+            get { return "201803241947190_AddItemsTable"; }
         }
         
         string IMigrationMetadata.Source
