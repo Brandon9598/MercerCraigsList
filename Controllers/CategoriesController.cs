@@ -37,7 +37,14 @@ namespace Mercer_Craigslist.Controllers
             return View(categoryItems);
         }
 
-
+        //public ActionResult Detail(int itemID)
+        //{
+        //    var item = _dbContext.Items.SingleOrDefault(i => i.Id == itemID);
+        //    if (item == null)
+        //        return HttpNotFound();
+        //    return RedirectToAction("Detail", "Items", item);
+            
+        //}
 
     }
 }

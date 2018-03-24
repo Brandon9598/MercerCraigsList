@@ -197,13 +197,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803240011022_InitialCreate.cs" />
-    <Compile Include="Migrations\201803240011022_InitialCreate.Designer.cs">
-      <DependentUpon>201803240011022_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803240022026_AddItemTable.cs" />
-    <Compile Include="Migrations\201803240022026_AddItemTable.Designer.cs">
-      <DependentUpon>201803240022026_AddItemTable.cs</DependentUpon>
+    <Compile Include="Migrations\201803241940214_AddItemsTable.cs" />
+    <Compile Include="Migrations\201803241940214_AddItemsTable.Designer.cs">
+      <DependentUpon>201803241940214_AddItemsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -281,6 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -296,11 +293,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803240011022_InitialCreate.resx">
-      <DependentUpon>201803240011022_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803240022026_AddItemTable.resx">
-      <DependentUpon>201803240022026_AddItemTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803241940214_AddItemsTable.resx">
+      <DependentUpon>201803241940214_AddItemsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

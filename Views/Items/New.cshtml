@@ -6,7 +6,7 @@
 
 <h2>New</h2>
 <!-- Helper Method -->
-@using (Html.BeginForm("Add", "Items", FormMethod.Post, new { @class = "form" }))
+@using (Html.BeginForm("Add", "Items", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     Html.RenderPartial("_ItemForm");
 }

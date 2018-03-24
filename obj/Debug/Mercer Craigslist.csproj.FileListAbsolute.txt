@@ -69,6 +69,5 @@ C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer
 C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer Craigslist.csproj.CoreCompileInputs.cache
 C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer Craigslist.dll
 C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer Craigslist.pdb
-C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer_Craigslist.Migrations.InitialCreate.resources
+C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer_Craigslist.Migrations.AddItemsTable.resources
 C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer Craigslist.csproj.GenerateResource.Cache
-C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer_Craigslist.Migrations.AddItemTable.resources

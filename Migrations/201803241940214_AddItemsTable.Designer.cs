@@ -7,13 +7,13 @@ namespace Mercer_Craigslist.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddItemTable : IMigrationMetadata
+    public sealed partial class AddItemsTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddItemTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddItemsTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201803240022026_AddItemTable"; }
+            get { return "201803241940214_AddItemsTable"; }
         }
         
         string IMigrationMetadata.Source

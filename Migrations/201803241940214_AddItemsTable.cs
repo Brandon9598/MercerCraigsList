@@ -3,10 +3,23 @@ namespace Mercer_Craigslist.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class AddItemsTable : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Items",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Title = c.String(),
+                        Description = c.String(),
+                        Cost = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        OwnerEmail = c.String(),
+                        Category = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
@@ -94,6 +107,7 @@ namespace Mercer_Craigslist.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Items");
         }
     }
 }

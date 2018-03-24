@@ -24,5 +24,10 @@
     @Html.EnumDropDownListFor(m => m.Category, new { @class = "form-control" })
 </div>
 
+<div class="form-group">
+    @Html.LabelFor(m => m.ImageFile)
+    <input type="file" name="ImageFile" />
+</div>
+
 @Html.HiddenFor(i => i.Id)
 <input type="submit" class="btn btn-primary" value="Save" />

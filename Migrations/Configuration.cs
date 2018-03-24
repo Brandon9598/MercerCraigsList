@@ -10,7 +10,6 @@ namespace Mercer_Craigslist.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Mercer_Craigslist.Models.ApplicationDbContext";
         }
 
         protected override void Seed(Mercer_Craigslist.Models.ApplicationDbContext context)

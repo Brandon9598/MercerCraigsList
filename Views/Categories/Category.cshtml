@@ -14,7 +14,7 @@
                 <div class="item-title">@item.Title </div>
                 <div class="item-cost">@item.Cost </div>
                 <div class="item-description">@item.Description </div>
-                @Html.ActionLink("More info", "Detail", new { id = item.Id})
+                @Html.ActionLink("More info", "Detail", "Items", new { id = item.Id }, new {})
             </li>
             }    
         </ul>
