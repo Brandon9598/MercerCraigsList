@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Mercer_Craigslist.Models.Item>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Items</h2>
+<p>
+    <!-- Helper Method -->
+    @Html.ActionLink("Add Item", "New")
+</p>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Title (@item.Category) @Html.ActionLink("Edit", "Edit", new { id = item.Id })</li>
+    }
+</ul>

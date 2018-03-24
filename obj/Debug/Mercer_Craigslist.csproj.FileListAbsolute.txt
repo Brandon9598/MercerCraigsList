@@ -1,0 +1,3 @@
+C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer_Craigslist.csproj.CoreCompileInputs.cache
+C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer Craigslist.dll
+C:\Users\Brand\source\repos\Mercer Craigslist\Mercer Craigslist\obj\Debug\Mercer Craigslist.pdb
