@@ -12,6 +12,9 @@
 <ul>
     @foreach (var item in Model)
     {
-        <li>@item.Title (@item.Category) @Html.ActionLink("Edit", "Edit", new { id = item.Id })</li>
+        <li>@item.Title (@item.Category) 
+        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+    </li>
     }
 </ul>

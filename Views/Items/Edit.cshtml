@@ -1,4 +1,5 @@
-﻿@model Mercer_Craigslist.Models.Item
+﻿
+@model Mercer_Craigslist.Models.Item
 @{
     ViewBag.Title = "New";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,7 +7,7 @@
 
 <h2>New</h2>
 <!-- Helper Method -->
-@using (Html.BeginForm("Add", "Items", FormMethod.Post, new { @class = "form" }))
+@using (Html.BeginForm("Update", "Items", FormMethod.Post, new { @class = "form" }))
 {
     Html.RenderPartial("_ItemForm");
 }
